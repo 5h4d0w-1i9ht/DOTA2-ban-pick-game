@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota2 队长模式 Ban/Pick</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dota2 队长模式 Ban/Pick</h1>
+        
+        <div class="game-container">
+            <div class="team radiant">
+                <h2>天辉 (Radiant)</h2>
+                <div class="picks-bans">
+                    Ban<div class="bans" id="radiant-bans"></div>
+                    Pick<div class="picks" id="radiant-picks"></div>
+                </div>
+            </div>
+            
+            <div class="status-panel">
+                <div class="status">
+                    <div id="current-phase">禁用阶段</div>
+                    <div id="current-team">天辉</div>
+                    <div id="current-action">禁用英雄</div>
+                    <div id="step-counter">第 1 步</div>
+                </div>
+                <div class="controls">
+                    <button id="undo-btn">撤销</button>
+                    <button id="reset-btn">重置</button>
+                    <button id="save-btn">保存游戏</button>
+                </div>
+            </div>
+            
+            <div class="team dire">
+                <h2>夜魇 (Dire)</h2>
+                <div class="picks-bans">
+                    Ban<div class="bans" id="dire-bans"></div>
+                    Pick<div class="picks" id="dire-picks"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-selection">
+            <div class="hero-type-table strength">
+                <h3>力量英雄</h3>
+                <div class="available-heroes-container">
+                    <div class="available-heroes" id="strength-heroes"></div>
+                </div>
+            </div>
+            
+            <div class="hero-type-table agility">
+                <h3>敏捷英雄</h3>
+                <div class="available-heroes-container">
+                    <div class="available-heroes" id="agility-heroes"></div>
+                </div>
+            </div>
+            
+            <div class="hero-type-table intelligence">
+                <h3>智力英雄</h3>
+                <div class="available-heroes-container">
+                    <div class="available-heroes" id="intelligence-heroes"></div>
+                </div>
+            </div>
+            
+            <div class="hero-type-table all-talent">
+                <h3>全才英雄</h3>
+                <div class="available-heroes-container">
+                    <div class="available-heroes" id="all-talent-heroes"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
